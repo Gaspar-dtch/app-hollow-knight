@@ -36,3 +36,32 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## Simulation de build
+
+### Lvl 1 -> 
+- Lister les charmes avec nom, nb de slots, effets, location, acquisition, prix, tags, lien wiki
+- Créer son build : ajouter des charmes -> calcule tes dégats (aiguillon, sorts) et d'autres stats modifier par les charmes
+- Filtre par tags
+
+### Lvl 2 -> 
+- Proposition de build en fonction du style de jeux
+- Comparaison côte à côte de builds
+
+### Lvl 3 -> 
+- Enregistrer ses builds
+- Pouvoir impoter/exporter son build
+
+
+## Liste des points d'intérêt avec map
+
+### Lvl 1 -> 
+- Lister les points d'intérêt
+- Afficher le pourcentage
+
+### Lvl 2 -> 
+- Afficher la map
+- Afficher les points sur la map
+
+### Lvl 3 -> 
+- Cliquer sur un collectible -> redirige vers son endroit sur la map
