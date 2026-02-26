@@ -1,7 +1,12 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
+import { reactive } from 'vue'
 
-export const store = [
+export { store, itemsSelected }
+
+const itemsSelected = reactive([])
+
+const store = [
   {
     "catName": "Aiguillon 4%",
     "items": [
@@ -12,8 +17,8 @@ export const store = [
         "location": "",
         "acquisition": "",
         "damage": "",
-        "percentage": "1%",
-        "done": "false",
+        "percentage": 1,
+        "done": false,
         "icon": ""
       },
       {
@@ -23,8 +28,8 @@ export const store = [
         "location": "",
         "acquisition": "",
         "damage": "",
-        "percentage": "1%",
-        "done": "false",
+        "percentage": 1,
+        "done": false,
         "icon": ""
       },
       {
@@ -34,8 +39,8 @@ export const store = [
         "location": "",
         "acquisition": "",
         "damage": "",
-        "percentage": "1%",
-        "done": "false",
+        "percentage": 1,
+        "done": false,
         "icon": ""
       },
       {
@@ -45,8 +50,8 @@ export const store = [
         "location": "",
         "acquisition": "",
         "damage": "",
-        "percentage": "1%",
-        "done": "false",
+        "percentage": 1,
+        "done": false,
         "icon": ""
       },
       {
@@ -56,8 +61,8 @@ export const store = [
         "location": "",
         "acquisition": "",
         "damage": "",
-        "percentage": "1%",
-        "done": "false",
+        "percentage": 1,
+        "done": false,
         "icon": ""
       }
     ]
@@ -72,8 +77,8 @@ export const store = [
         "location": "",
         "acquisition": "",
         "damage": "",
-        "percentage": "1%",
-        "done": "false",
+        "percentage": 1,
+        "done": false,
         "icon": ""
       },
       {
@@ -83,8 +88,8 @@ export const store = [
         "location": "",
         "acquisition": "",
         "damage": "",
-        "percentage": "1%",
-        "done": "false",
+        "percentage": 1,
+        "done": false,
         "icon": ""
       },
       {
@@ -94,8 +99,8 @@ export const store = [
         "location": "",
         "acquisition": "",
         "damage": "",
-        "percentage": "1%",
-        "done": "false",
+        "percentage": 1,
+        "done": false,
         "icon": ""
       }
     ]
@@ -110,8 +115,8 @@ export const store = [
         "location": "",
         "acquisition": "",
         "damage": "",
-        "percentage": "1%",
-        "done": "false",
+        "percentage": 1,
+        "done": false,
         "icon": ""
       },
       {
@@ -121,8 +126,8 @@ export const store = [
         "location": "",
         "acquisition": "",
         "damage": "",
-        "percentage": "1%",
-        "done": "false",
+        "percentage": 1,
+        "done": false,
         "icon": ""
       },
       {
@@ -132,8 +137,8 @@ export const store = [
         "location": "",
         "acquisition": "",
         "damage": "",
-        "percentage": "1%",
-        "done": "false",
+        "percentage": 1,
+        "done": false,
         "icon": ""
       },
       {
@@ -143,8 +148,8 @@ export const store = [
         "location": "",
         "acquisition": "",
         "damage": "",
-        "percentage": "1%",
-        "done": "false",
+        "percentage": 1,
+        "done": false,
         "icon": ""
       },
       {
@@ -154,8 +159,8 @@ export const store = [
         "location": "",
         "acquisition": "",
         "damage": "",
-        "percentage": "1%",
-        "done": "false",
+        "percentage": 1,
+        "done": false,
         "icon": ""
       },
       {
@@ -165,8 +170,8 @@ export const store = [
         "location": "",
         "acquisition": "",
         "damage": "",
-        "percentage": "1%",
-        "done": "false",
+        "percentage": 1,
+        "done": false,
         "icon": ""
       },
     ]
@@ -180,8 +185,8 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "2%",
-        "done": "false",
+        "percentage": 2,
+        "done": false,
         "icon": ""
       },
       {
@@ -190,8 +195,8 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "2%",
-        "done": "false",
+        "percentage": 2,
+        "done": false,
         "icon": ""
       },
       {
@@ -200,8 +205,8 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "2%",
-        "done": "false",
+        "percentage": 2,
+        "done": false,
         "icon": ""
       },
       {
@@ -210,8 +215,8 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "2%",
-        "done": "false",
+        "percentage": 2,
+        "done": false,
         "icon": ""
       },
       {
@@ -220,8 +225,8 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "2%",
-        "done": "false",
+        "percentage": 2,
+        "done": false,
         "icon": ""
       },
       {
@@ -230,8 +235,8 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "2%",
-        "done": "false",
+        "percentage": 2,
+        "done": false,
         "icon": ""
       }
     ]
@@ -245,7 +250,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       },
@@ -255,7 +260,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       },
@@ -265,7 +270,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       }
@@ -280,7 +285,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       },
@@ -290,7 +295,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       }
@@ -763,6 +768,166 @@ export const store = [
     ]
   },
   {
+    "catName": "Éclats de masque 4%",
+    "items": [
+      {
+        "name": "Furieux Gardien",
+        "tags": "Éclats de masque",
+        "percentage": 0.25,
+        "done": false
+      },
+      {
+        "name": "Nid-profond",
+        "tags": "Éclats de masque",
+        "percentage": 0.25,
+        "done": false
+      },
+      {
+        "name": "Sly 1",
+        "tags": "Éclats de masque",
+        "percentage": 0.25,
+        "done": false
+      },
+      {
+        "name": "Sly 2",
+        "tags": "Éclats de masque",
+        "percentage": 0.25,
+        "done": false
+      },
+      {
+        "name": "Sly 3",
+        "tags": "Éclats de masque",
+        "percentage": 0.25,
+        "done": false
+      },
+      {
+        "name": "Sly 4",
+        "tags": "Éclats de masque",
+        "percentage": 0.25,
+        "done": false
+      },
+      {
+        "name": "Bretta",
+        "tags": "Éclats de masque",
+        "percentage": 0.25,
+        "done": false
+      },
+      {
+        "name": "Mawlek Maussade",
+        "tags": "Éclats de masque",
+        "percentage": 0.25,
+        "done": false
+      },
+      {
+        "name": "Larve 5",
+        "tags": "Éclats de masque",
+        "percentage": 0.25,
+        "done": false
+      },
+      {
+        "name": "Routes Oubliées",
+        "tags": "Éclats de masque",
+        "percentage": 0.25,
+        "done": false
+      },
+      {
+        "name": "Station de la Reine",
+        "tags": "Éclats de masque",
+        "percentage": 0.25,
+        "done": false
+      },
+      {
+        "name": "Voyante",
+        "tags": "Éclats de masque",
+        "percentage": 0.25,
+        "done": false
+      },
+      {
+        "name": "L'Endeuillée Grise",
+        "tags": "Éclats de masque",
+        "percentage": 0.25,
+        "done": false
+      },
+      {
+        "name": "Voies d'Eau Royales",
+        "tags": "Éclats de masque",
+        "percentage": 0.25,
+        "done": false
+      },
+      {
+        "name": "Sanctuaire de Pierre",
+        "tags": "Éclats de masque",
+        "percentage": 0.25,
+        "done": false
+      },
+      {
+        "name": "La Ruche",
+        "tags": "Éclats de masque",
+        "percentage": 0.25,
+        "done": false
+      }
+    ]
+  },
+  {
+    "catName": "Fragments de réceptacle 3%",
+    "items": [
+      {
+        "name": "Bassin Ancestral",
+        "tags": "Fragments de réceptacle",
+        "percentage": 0.33,
+        "done": false
+      },
+      {
+        "name": "Cité des Larmes",
+        "tags": "Fragments de réceptacle",
+        "percentage": 0.33,
+        "done": false
+      },
+      {
+        "name": "Nid-profond",
+        "tags": "Fragments de réceptacle",
+        "percentage": 0.33,
+        "done": false
+      },
+      {
+        "name": "Sly 1",
+        "tags": "Fragments de réceptacle",
+        "percentage": 0.33,
+        "done": false
+      },
+      {
+        "name": "Sly 2",
+        "tags": "Fragments de réceptacle",
+        "percentage": 0.33,
+        "done": false
+      },
+      {
+        "name": "Routes Oubliées",
+        "tags": "Fragments de réceptacle",
+        "percentage": 0.33,
+        "done": false
+      },
+      {
+        "name": "Vertchemin",
+        "tags": "Fragments de réceptacle",
+        "percentage": 0.33,
+        "done": false
+      },
+      {
+        "name": "Voyante",
+        "tags": "Fragments de réceptacle",
+        "percentage": 0.33,
+        "done": false
+      },
+      {
+        "name": "Tanière Aux Coléoptères",
+        "tags": "Fragments de réceptacle",
+        "percentage": 0.33,
+        "done": false
+      }
+    ]
+  },
+  {
     "catName": "Boss 17%",
     "items": [
       {
@@ -771,7 +936,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "Proche Disparus",
         "success": "",
         "done": false,
@@ -783,7 +948,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "Vaisseau Corrompu",
         "success": "",
         "done": false,
@@ -795,7 +960,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "",
         "success": "",
         "done": false,
@@ -807,7 +972,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "Protecteur Blanc",
         "success": "",
         "done": false,
@@ -819,7 +984,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "Défenseur Bousier",
         "success": "",
         "done": false,
@@ -832,7 +997,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "Chevalier Méprisé",
         "success": "",
         "done": false,
@@ -844,7 +1009,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "Faux Chevalier",
         "success": "",
         "done": false,
@@ -856,7 +1021,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "Roi des cauchemars Grimm",
         "success": "",
         "done": false,
@@ -868,7 +1033,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "Grimm",
         "success": "",
         "done": false,
@@ -880,7 +1045,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "",
         "success": "",
         "done": false,
@@ -893,7 +1058,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "",
         "success": "",
         "done": false,
@@ -905,7 +1070,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "Hornet Sentinelle",
         "success": "",
         "done": false,
@@ -917,7 +1082,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "Hornet Protectrice",
         "success": "",
         "done": false,
@@ -929,7 +1094,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "Soeurs D'armes",
         "success": "",
         "done": false,
@@ -941,7 +1106,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "Dames Mante",
         "success": "",
         "done": false,
@@ -954,7 +1119,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "Nosk Ailé",
         "success": "",
         "done": false,
@@ -966,7 +1131,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "Nosk",
         "success": "",
         "done": false,
@@ -978,7 +1143,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "Tyran De l'Âme",
         "success": "",
         "done": false,
@@ -990,7 +1155,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "Maître d'Âme",
         "success": "",
         "done": false,
@@ -1003,7 +1168,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "",
         "success": "",
         "done": false,
@@ -1015,7 +1180,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "",
         "success": "",
         "done": false,
@@ -1027,7 +1192,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "",
         "success": "",
         "done": false,
@@ -1039,7 +1204,7 @@ export const store = [
         "description": "",
         "location": "",
         "reward": "",
-        "percentage": "1%",
+        "percentage": 1,
         "variant": "",
         "success": "",
         "done": false,
@@ -1056,7 +1221,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       },
@@ -1066,7 +1231,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       },
@@ -1076,7 +1241,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       },
@@ -1086,7 +1251,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       },
@@ -1096,7 +1261,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       },
@@ -1106,7 +1271,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       },
@@ -1116,7 +1281,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       }
@@ -1131,7 +1296,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       },
@@ -1141,7 +1306,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       },
@@ -1151,7 +1316,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       }
@@ -1166,7 +1331,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       },
@@ -1176,7 +1341,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       },
@@ -1186,7 +1351,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       }
@@ -1201,7 +1366,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       },
@@ -1211,7 +1376,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       },
@@ -1221,7 +1386,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       },
@@ -1231,7 +1396,7 @@ export const store = [
         "description": "",
         "location": "",
         "acquisition": "",
-        "percentage": "1%",
+        "percentage": 1,
         "done": false,
         "icon": ""
       }
