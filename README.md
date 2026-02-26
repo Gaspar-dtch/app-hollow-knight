@@ -82,7 +82,7 @@ npm e build
 - Boss 17%
 - Rêve du Guerrier 7%
 - Rêveurs 3%
-- Divers 3%
+- Le Colisée des Fous 3%
 - Panthéons 4%
 
 {
