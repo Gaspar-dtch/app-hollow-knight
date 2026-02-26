@@ -70,20 +70,20 @@ npm e build
 
 ## Store
 
-Aiguillon 4%
-Art de l'Aiguillon 3%
-Sorts 6%
-Équipements 12%
-Aiguillon des rêves 3%
-Divers 3%
-Charmes 40%
-Éclats de masque 4%
-Fragments de réceptacle 3%
-Boss 17%
-Rêve du Guerrier 7%
-Rêveurs 3%
-Divers 3%
-Panthéons 4%
+- Aiguillon 4%
+- Art de l'Aiguillon 3%
+- Sorts 6%
+- Équipements 12%
+- Aiguillon des rêves 3%
+- Divers 3%
+- Charmes 40%
+- Éclats de masque 4%
+- Fragments de réceptacle 3%
+- Boss 17%
+- Rêve du Guerrier 7%
+- Rêveurs 3%
+- Divers 3%
+- Panthéons 4%
 
 {
   "nail": [
