@@ -96,6 +96,7 @@ Panthéons 4%
       "damage": "",
       "percentage": "1%",
       "done": "false"
+      "icon": ""
     },
     {
       "name": "Aiguillon pointu",
@@ -106,6 +107,7 @@ Panthéons 4%
       "damage": "",
       "percentage": "1%",
       "done": "false"
+      "icon": ""
     },
     {
       "name": "Aiguillon forgé",
@@ -116,6 +118,7 @@ Panthéons 4%
       "damage": "",
       "percentage": "1%",
       "done": "false"
+      "icon": ""
     },
     {
       "name": "Aiguillon en spirale",
@@ -126,6 +129,7 @@ Panthéons 4%
       "damage": "",
       "percentage": "1%",
       "done": "false"
+      "icon": ""
     },
     {
       "name": "Aiguillon pur",
@@ -136,6 +140,7 @@ Panthéons 4%
       "damage": "",
       "percentage": "1%",
       "done": "false"
+      "icon": ""
     }
   ],
   "nail-arts": [
@@ -148,6 +153,7 @@ Panthéons 4%
       "damage": "",
       "percentage": "1%",
       "done": "false" 
+      "icon": ""
     },
     {
      "name": "Entaille éclaire",
@@ -157,7 +163,8 @@ Panthéons 4%
       "acquisition": "",
       "damage": "",
       "percentage": "1%",
-      "done": "false" 
+      "done": "false"
+      "icon": ""
     },
     {
      "name": "Entaille implacable",
@@ -168,6 +175,7 @@ Panthéons 4%
       "damage": "",
       "percentage": "1%",
       "done": "false" 
+      "icon": ""
     }
   ],
   "spells": [
@@ -180,6 +188,7 @@ Panthéons 4%
       "damage": "",
       "percentage": "1%",
       "done": "false" 
+      "icon": ""
     },
     {
       "name": "Élan ravageur",
@@ -190,6 +199,7 @@ Panthéons 4%
       "damage": "",
       "percentage": "1%",
       "done": "false" 
+      "icon": ""
     },
     {
       "name": "Spectres hurleurs",
@@ -200,6 +210,7 @@ Panthéons 4%
       "damage": "",
       "percentage": "1%",
       "done": "false" 
+      "icon": ""
     },
     {
       "name": "Âme d'ombre",
@@ -210,6 +221,7 @@ Panthéons 4%
       "damage": "",
       "percentage": "1%",
       "done": "false" 
+      "icon": ""
     },
     {
       "name": "Ténèbres descendantes",
@@ -220,6 +232,7 @@ Panthéons 4%
       "damage": "",
       "percentage": "1%",
       "done": "false"
+      "icon": ""
     },
     {
       "name": "Cri des abysses",
@@ -230,6 +243,7 @@ Panthéons 4%
       "damage": "",
       "percentage": "1%",
       "done": "false"
+      "icon": ""
     },
   ],
   "equipment": [
@@ -240,7 +254,8 @@ Panthéons 4%
       "location": "",
       "acquisition": "",
       "percentage": "2%",
-      "done": "false"
+      "done": "false",
+      "icon": ""
     },
     {
       "name": "Pince de mante religieuse",
@@ -249,7 +264,8 @@ Panthéons 4%
       "location": "",
       "acquisition": "",
       "percentage": "2%",
-      "done": "false"
+      "done": "false",
+      "icon": ""
     },
     {
       "name": "Coeur de cristal",
@@ -258,7 +274,8 @@ Panthéons 4%
       "location": "",
       "acquisition": "",
       "percentage": "2%",
-      "done": "false"
+      "done": "false",
+      "icon": ""
     },
     {
       "name": "Ailes de monarque",
@@ -267,7 +284,8 @@ Panthéons 4%
       "location": "",
       "acquisition": "",
       "percentage": "2%",
-      "done": "false"
+      "done": "false",
+      "icon": ""
     },
     {
       "name": "",
@@ -276,7 +294,8 @@ Panthéons 4%
       "location": "",
       "acquisition": "",
       "percentage": "2%",
-      "done": "false"
+      "done": "false",
+      "icon": ""
     },
     {
       "name": "Cape des ombres",
@@ -285,7 +304,8 @@ Panthéons 4%
       "location": "",
       "acquisition": "",
       "percentage": "2%",
-      "done": "false"
+      "done": "false",
+      "icon": ""
     }
   ],
   "dream-nail": [
@@ -296,7 +316,8 @@ Panthéons 4%
       "location": "",
       "acquisition": "",
       "percentage": "1%",
-      "done": false
+      "done": false,
+      "icon": ""
     },
     {
       "name": "Aiguillon éveillé des rêves",
@@ -305,7 +326,8 @@ Panthéons 4%
       "location": "",
       "acquisition": "",
       "percentage": "1%",
-      "done": false
+      "done": false,
+      "icon": ""
     },
     {
       "name": "Ascension",
@@ -314,10 +336,11 @@ Panthéons 4%
       "location": "",
       "acquisition": "",
       "percentage": "1%",
-      "done": false
+      "done": false,
+      "icon": ""
     }
-  ],
-    "divers": [
+  ]
+  "divers": [
     {
       "name": "Marque du roi",
       "tags": "Clé",
@@ -326,6 +349,7 @@ Panthéons 4%
       "acquisition": "",
       "percentage": "1%",
       "done": false
+      "icon": ""
     },
     {
       "name": "Syntoniseur Divin",
@@ -335,6 +359,7 @@ Panthéons 4%
       "acquisition": "",
       "percentage": "1%",
       "done": false
+      "icon": ""
     }
   ],
   "charms": [
