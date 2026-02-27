@@ -2,11 +2,13 @@ import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 import { reactive } from 'vue'
 
-export { store, itemsSelected }
+export { state, itemsSelected, charmsSelected }
 
-const itemsSelected = reactive([])
+const itemsSelected = ref([])
+const charmsSelected = ref([])
+const charmNotch = ref([])
 
-const store = [
+const state = [
   {
     "catName": "Aiguillon 4%",
     "items": [
@@ -303,36 +305,42 @@ const store = [
   },
   {
     "catName": "Charmes 40%",
-    "items": [
+    "items": [  
       {
         "name": "Boussole murmurante",
         "slots": 1,
-        "effects": "Affiche la position du porteur sur la carte lorsqu'elle est ouverte.",
+        "effects": "Indique l'emplacement du Chevalier sur la carte.",
         "location": "Vendue par Iselda à Dirtmouth après avoir rencontré Cornifer.",
         "price": "220 Géo",
         "tags": ["exploration", "utilitaire"],
         "lien_wiki": "https://fr.hollowknight.wiki/w/Boussole_murmurante",
-        "icon": ""
+        "icon": "https://cdn.wikimg.net/fr/hkwiki/images/7/7d/Wayward_Compass.png",
+        "percentage": 1,
+        "done": false
       },
       {
         "name": "Essaim cueilleur",
         "slots": 1,
-        "effects": "Un essaim ramasse automatiquement les Géo laissés au sol.",
+        "effects": "Récolte les Geos.",
         "location": "Vendu par Sly à Dirtmouth.",
         "price": "300 Géo",
         "tags": ["éconameie", "utilitaire"],
         "lien_wiki": "https://fr.hollowknight.wiki/w/Essaim_cueilleur",
-        "icon": ""
+        "icon": "https://cdn.wikimg.net/fr/hkwiki/images/8/8a/Gathering_Swarm.png",
+        "percentage": 1,
+        "done": false
       },
       {
-        "name": "Carapace robuste",
+        "name": "Carapace infrangible",
         "slots": 2,
-        "effects": "Augmente la durée d'invincibilité après avoir subi des dégâts.",
+        "effects": "Augmente la durée d'invincibilité après avoir été touché de 35%. Réduit de 60 % le recul des coups (sans pouvoir faire d'action) après avoir été touché.",
         "location": "Vendu par Sly à Dirtmouth.",
-        "price": "350 Géo",
+        "price": "200 Géo",
         "tags": ["défense", "combat"],
-        "lien_wiki": "https://fr.hollowknight.wiki/w/Carapace_robuste",
-        "icon": ""
+        "lien_wiki": "https://fr.hollowknight.wiki/w/Carapace_infrangible",
+        "icon": "https://cdn.wikimg.net/fr/hkwiki/images/f/f2/Stalwart_Shell.png",
+        "percentage": 1,
+        "done": false
       },
       {
         "name": "Capturâme",
@@ -342,7 +350,9 @@ const store = [
         "price": "N/A",
         "tags": ["âme", "combat"],
         "lien_wiki": "https://fr.hollowknight.wiki/w/Captur%C3%A2me",
-        "icon": ""
+        "icon": "",
+        "percentage": 1,
+        "done": false
       },
       {
         "name": "Maître des Âmes",
@@ -352,7 +362,9 @@ const store = [
         "price": "N/A",
         "tags": ["âme", "sorts"],
         "lien_wiki": "https://fr.hollowknight.wiki/w/Ma%C3%AEtre_des_%C3%82mes",
-        "icon": ""
+        "icon": "",
+        "percentage": 1,
+        "done": false
       },
       {
         "name": "Avarice fragile",
@@ -362,7 +374,9 @@ const store = [
         "price": "250 Géo",
         "tags": ["éconameie", "risque"],
         "lien_wiki": "https://fr.hollowknight.wiki/w/Avarice_fragile",
-        "icon": ""
+        "icon": "",
+        "percentage": 1,
+        "done": false
       },
       {
         "name": "Avarice incassable",
@@ -372,7 +386,9 @@ const store = [
         "price": "N/A",
         "tags": ["éconameie"],
         "lien_wiki": "https://fr.hollowknight.wiki/w/Avarice_incassable",
-        "icon": ""
+        "icon": "",
+        "percentage": 1,
+        "done": false
       },
       {
         "name": "Force fragile",
@@ -382,7 +398,9 @@ const store = [
         "price": "350 Géo",
         "tags": ["attaque", "risque"],
         "lien_wiki": "https://fr.hollowknight.wiki/w/Force_fragile",
-        "icon": ""
+        "icon": "",
+        "percentage": 1,
+        "done": false
       },
       {
         "name": "Force incassable",
@@ -392,7 +410,9 @@ const store = [
         "price": "N/A",
         "tags": ["attaque"],
         "lien_wiki": "https://fr.hollowknight.wiki/w/Force_incassable",
-        "icon": ""
+        "icon": "",
+        "percentage": 1,
+        "done": false
       },
       {
         "name": "Cœur fragile",
@@ -402,7 +422,9 @@ const store = [
         "price": "350 Géo",
         "tags": ["défense", "risque"],
         "lien_wiki": "https://fr.hollowknight.wiki/w/C%C5%93ur_fragile",
-        "icon": ""
+        "icon": "",
+        "percentage": 1,
+        "done": false
       },
       {
         "name": "Cœur incassable",
@@ -412,7 +434,9 @@ const store = [
         "price": "N/A",
         "tags": ["défense"],
         "lien_wiki": "https://fr.hollowknight.wiki/w/C%C5%93ur_incassable",
-        "icon": ""
+        "icon": "",
+        "percentage": 1,
+        "done": false
       },
 
       {
@@ -423,7 +447,9 @@ const store = [
         "price": "N/A",
         "tags": ["attaque", "high-risk"],
         "lien_wiki": "https://fr.hollowknight.wiki/w/Fureur_des_disparus",
-        "icon": ""
+        "icon": "",
+        "percentage": 1,
+        "done": false
       },
       {
         "name": "Marque d'orgueil",
@@ -433,7 +459,9 @@ const store = [
         "price": "N/A",
         "tags": ["attaque", "portée"],
         "lien_wiki": "https://fr.hollowknight.wiki/w/Marque_d%27orgueil",
-        "icon": ""
+        "icon": "",
+        "percentage": 1,
+        "done": false
       },
       {
         "name": "Longnail",
@@ -443,7 +471,9 @@ const store = [
         "price": "300 Géo",
         "tags": ["attaque", "portée"],
         "lien_wiki": "https://fr.hollowknight.wiki/w/Longnail",
-        "icon": ""
+        "icon": "",
+        "percentage": 1,
+        "done": false
       },
       {
         "name": "Grubsong",
@@ -453,7 +483,9 @@ const store = [
         "price": "N/A",
         "tags": ["âme", "défense", "soutien"],
         "lien_wiki": "https://fr.hollowknight.wiki/w/Grubsong",
-        "icon": ""
+        "icon": "",
+        "percentage": 1,
+        "done": false
       },
       {
         "name": "Grubberfly's Elegy",
@@ -463,7 +495,9 @@ const store = [
         "price": "N/A",
         "tags": ["attaque", "projectile"],
         "lien_wiki": "https://fr.hollowknight.wiki/w/Grubberfly%27s_Elegy",
-        "icon": ""
+        "icon": "",
+        "percentage": 1,
+        "done": false
       },
       {
         "name": "Pierre du chamane",
@@ -473,7 +507,9 @@ const store = [
         "price": "220 Géo",
         "tags": ["sorts", "attaque"],
         "lien_wiki": "https://fr.hollowknight.wiki/w/Pierre_du_chamane",
-        "icon": ""
+        "icon": "",
+        "percentage": 1,
+        "done": false
       },
       {
         "name": "Maître des rêves",
@@ -483,7 +519,9 @@ const store = [
         "price": "N/A",
         "tags": ["rêve", "âme"],
         "lien_wiki": "https://fr.hollowknight.wiki/w/Ma%C3%AEtre_des_r%C3%AAves",
-        "icon": ""
+        "icon": "",
+        "percentage": 1,
+        "done": false
       },
       {
         "name": "Sprintmaster",
@@ -493,7 +531,9 @@ const store = [
         "price": "400 Géo",
         "tags": ["mobilité"],
         "lien_wiki": "https://fr.hollowknight.wiki/w/Sprintmaster",
-        "icon": ""
+        "icon": "",
+        "percentage": 1,
+        "done": false
       },
       {
         "name": "Dashmaster",
