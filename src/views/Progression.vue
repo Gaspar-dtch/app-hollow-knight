@@ -1,20 +1,27 @@
 <script setup>
-import { store, itemsSelected } from '@/stores';
-import { reactive } from 'vue';
+import { state, itemsSelected } from '@/stores';
+import { normalizeModuleId } from 'vite/module-runner';
+import { reactive, ref } from 'vue';
 
-const selected = (name) => {
-  itemsSelected.push(name)
+// const itemsSelected = reactive([])
 
-  localStorage.setItem("itemSelected", itemsSelected)
-}
+// let percentage = 0
 
-let percentage = 0
+// const selected = (item) => {
 
-const increasePercentage = (itemPercentage) => {
-  percentage += itemPercentage
-  console.log(percentage);
-  
-}
+//   const isItemSelected = (element) => element === item.name
+
+//   if(parseInt(itemsSelected.findIndex(isItemSelected)) === -1){
+//     itemsSelected.push(item.name)
+//     percentage += item.percentage
+
+//   } else {
+//     itemsSelected.splice(isItemSelected, 1)
+//     percentage -= item.percentage
+//   }
+//   localStorage.setItem("itemSelected", itemsSelected)
+// }
+
 
 </script>
 
@@ -23,19 +30,19 @@ const increasePercentage = (itemPercentage) => {
     <h1>Progression {{ percentage + "%" }}</h1>
     <div>{{ itemsSelected }}</div>
 
-    <div v-for="cat in store" class="categories">
+    <div v-for="cat in state" class="categories">
       <h2>{{ cat.catName }}</h2>
 
-      <div class="cate-items">
-        <ul v-for="item in cat.items" @click="selected(item.name), increasePercentage(item.percentage)" :key="item">{{ item.name }}</ul>
+      <div v-for="item in cat.items" class="cate-items">
+        <input type="checkbox" :id="item.name" :value="item.name"  v-model="itemsSelected" />
+        <label :for="item.name" @click="selected(item)" :key="item" >{{ item.name }}</label>
       </div>
     </div>
-    
   </main>
 </template>
 
 <style>
-  ul{
+  label{
     user-select: none;
     cursor: pointer;
   }
